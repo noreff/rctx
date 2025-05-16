@@ -1,4 +1,4 @@
-from rstring.cli import main
+from rctx.cli import main
 
 if __name__ == '__main__':
     main()
