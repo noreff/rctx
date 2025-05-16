@@ -14,13 +14,11 @@ DEFAULT_PRESETS_FILE = os.path.join(os.path.dirname(__file__), 'default_presets.
 
 from .tree import get_tree_string
 
-# ... (get_language_from_extension, load_presets, save_presets, get_default_preset, set_default_preset, parse_gitignore, check_rsync remain the same as your last working version of these)
-
 def get_language_from_extension(file_path):
     name, ext = os.path.splitext(file_path)
     ext = ext.lower()
     ext_map = {
-        '.py': 'python', '.pyw': 'python', '.ipynb': 'python',
+        '.py': 'python', '.pyw': 'python',
         '.js': 'javascript', '.mjs': 'javascript', '.cjs': 'javascript',
         '.ts': 'typescript', '.mts': 'typescript', '.cts': 'typescript',
         '.java': 'java', '.jar': 'java',
