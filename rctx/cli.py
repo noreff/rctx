@@ -135,7 +135,7 @@ def main():
         summary_header.extend(["", "### FILE CONTENTS ###"])
 
         final_result_for_clipboard = "\n".join(summary_header)
-        if base_content: # Add base_content only if it exists
+        if base_content:
             final_result_for_clipboard += "\n" + base_content
     else:
         if tree_for_clipboard:
