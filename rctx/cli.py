@@ -8,7 +8,7 @@ from .utils import (
     get_default_preset, set_default_preset, parse_gitignore
 )
 
-logging.basicConfig(level=logging.INFO) # Consider level=logging.WARNING for less verbose default
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
@@ -89,7 +89,7 @@ def main():
         gitignore_path = os.path.join(os.getcwd(), '.gitignore')
         if os.path.exists(gitignore_path):
             gitignore_patterns = parse_gitignore(gitignore_path)
-            if gitignore_patterns: # Only modify if there are actual patterns
+            if gitignore_patterns:
                 rsync_args = gitignore_patterns + rsync_args # Prepend gitignore patterns
                 was_modified_by_gitignore = True
                 applied_gitignore_patterns = gitignore_patterns
