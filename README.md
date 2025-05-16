@@ -5,7 +5,7 @@
 
 Rctx is a developer tool that uses [Rsync](https://linux.die.net/man/1/rsync) to efficiently gather and stringify code from your projects. It's designed to streamline the process of preparing code context for AI programming assistants, making it easy to get intelligent insights about your codebase. This is a fork of the original `rstring` project.
 
-When you run `rctx`, it copies the selected file contents to your clipboard, prepended with a tree view of the matched files. The output is formatted using Markdown code blocks for easy pasting into LLMs or documents.
+When you run `rctx`, it copies the selected file contents to your clipboard, prepended with a tree view of the matched files. The output is formatted using Markdown code blocks for easy pasting into LLMs or documents
 
 <div align="center">
   <!-- You might want to update the demo image -->
