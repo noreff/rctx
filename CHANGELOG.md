@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/noreff/rctx/compare/v0.4.0...v0.5.0) (2025-05-16)
+
+
+### Features
+
+* clenaup ([488d623](https://github.com/noreff/rctx/commit/488d623553dec39800de2f9cd0732bacdf6fb261))
+
 ## [0.4.0](https://github.com/noreff/rctx/compare/v0.3.0...v0.4.0) (2025-05-16)
 
 
