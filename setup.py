@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="rctx",
-    version="0.6.0",
+    version="0.7.0",
     author="Volod Isai",
     author_email="volod.isai@gmail.com",
     description="A tool to stringify code using rsync and manage presets, forked from rstring.",
