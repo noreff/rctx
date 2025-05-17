@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0](https://github.com/noreff/rctx/compare/v0.7.0...v0.8.0) (2025-05-17)
+
+
+### Features
+
+* update ci/cd ([954c1ae](https://github.com/noreff/rctx/commit/954c1aea4b3e3c8a953feaaed392c7f79d5ed255))
+
 ## [0.7.0](https://github.com/noreff/rctx/compare/v0.6.0...v0.7.0) (2025-05-16)
 
 
