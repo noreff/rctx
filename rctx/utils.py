@@ -179,22 +179,24 @@ def run_rsync(args):
 def parse_rsync_output(output):
     # Original rstring parser
     file_list = []
-    print(f"DEBUG ORIGINAL PARSER: Full rsync output to parse:\n{output}\n--------------------") # Add debug
+    # print(f"DEBUG ORIGINAL PARSER: Full rsync output to parse:\n{output}\n--------------------") # Add debug
     for line in output.splitlines():
-        print(f"DEBUG ORIGINAL PARSER: Processing line: '{line}'") # Add debug
+        # print(f"DEBUG ORIGINAL PARSER: Processing line: '{line}'") # Add debug
         parts = line.split() # Split by whitespace
         if len(parts) >= 5 and not line.strip().endswith('/'): # Check if line ITSELF ends with / after stripping
             # Ensure that the path part (from parts[4:]) is not just "."
             file_path_candidate = ' '.join(parts[4:])
-            print(f"DEBUG ORIGINAL PARSER: Candidate path: '{file_path_candidate}', Parts: {parts}") # Add debug
+            # print(f"DEBUG ORIGINAL PARSER: Candidate path: '{file_path_candidate}', Parts: {parts}") # Add debug
             if file_path_candidate != '.':
-                print(f"DEBUG ORIGINAL PARSER: Appending '{file_path_candidate}'") # Add debug
+                # print(f"DEBUG ORIGINAL PARSER: Appending '{file_path_candidate}'") # Add debug
                 file_list.append(file_path_candidate)
             else:
-                print(f"DEBUG ORIGINAL PARSER: Skipping '.' path.") # Add debug
+                pass
+                # print(f"DEBUG ORIGINAL PARSER: Skipping '.' path.") # Add debug
         else:
-            print(f"DEBUG ORIGINAL PARSER: Skipping line (len<5 or ends with /): '{line.strip()}'") # Add debug
-    print(f"DEBUG ORIGINAL PARSER: Final parsed_list: {file_list}") # Add debug
+            pass
+            # print(f"DEBUG ORIGINAL PARSER: Skipping line (len<5 or ends with /): '{line.strip()}'") # Add debug
+    # print(f"DEBUG ORIGINAL PARSER: Final parsed_list: {file_list}") # Add debug
     return file_list
 # ^^^^^^^^^^^ END REVERT SECTION ^^^^^^^^^^^
 
