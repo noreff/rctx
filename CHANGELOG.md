@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.0](https://github.com/noreff/rctx/compare/v0.8.0...v0.9.0) (2025-07-25)
+
+
+### Features
+
+* disable debug output ([0785578](https://github.com/noreff/rctx/commit/0785578d59aeab1c31f3210369e49b86705e14d2))
+
 ## [0.8.0](https://github.com/noreff/rctx/compare/v0.7.0...v0.8.0) (2025-05-17)
 
 
