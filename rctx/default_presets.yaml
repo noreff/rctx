@@ -145,6 +145,7 @@ common:
     - --include=*.bash
     - --include=*.zsh
     - --include=*.sql
+    - --include=*.sol
 
     # Include common configuration and data files
     - --include=*.ini
